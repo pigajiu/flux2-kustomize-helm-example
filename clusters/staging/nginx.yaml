@@ -18,7 +18,7 @@ spec:
       imagePullSecrets:
         - name: regcred
       containers:
-      - image: dbsmouse/nginx:test-2
+      - image: dbsmouse/nginx:test-3
         ports:
         - containerPort: 80
         name: nginx
