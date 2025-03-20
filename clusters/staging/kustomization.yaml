@@ -8,3 +8,5 @@ resources:
   - namespace.yaml
   - nginx.yaml
   - image-automation.yaml
+images:
+- name: dbsmosue/nginx
