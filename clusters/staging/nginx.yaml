@@ -17,6 +17,7 @@ spec:
     spec:
       imagePullSecrets:
         - name: regcred
+        - namespace: flux-system
       containers:
       - image: dbsmouse/nginx:test-2
         ports:
