@@ -11,4 +11,4 @@ spec:
     extract: "$build_number"
   policy:
     numerical:
-      order: asc
+      order: desc
