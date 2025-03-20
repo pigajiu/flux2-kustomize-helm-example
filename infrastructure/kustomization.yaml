@@ -5,3 +5,4 @@ resources:
   - sealed-secret.yaml
   - image-secret
   - image-repositories
+  - treafik-ns.yaml
