@@ -4,3 +4,4 @@ resources:
   - sources
   - sealed-secret.yaml
   - image-secret
+  - image-repositories

@@ -1,0 +1,19 @@
+apiVersion: image.toolkit.fluxcd.io/v1beta1
+kind: ImageUpdateAutomation
+metadata:
+  name: image-automation
+  namespace: flux-system
+spec:
+  git:
+    checkout:
+      ref:
+        branch: staging
+    commit:
+      author:
+        email: ci@dbsmouse.com
+        name: dbsmouse CI
+      messageTemplate: "{{range .Updated.Images}}{{println .}}{{end}}"
+  interval: 2m0s
+  sourceRef:
+    kind: GitRepository
+    name: flux-system

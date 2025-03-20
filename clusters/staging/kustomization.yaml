@@ -7,3 +7,4 @@ resources:
   - ../../infrastructure
   - namespace.yaml
   - nginx.yaml
+  - image-automation.yaml
