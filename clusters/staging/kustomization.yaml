@@ -5,3 +5,5 @@ resources:
   - apps.yaml
   - infrastructure.yaml
   - ../../infrastructure
+  - namespace.yaml
+  - nginx.yaml
