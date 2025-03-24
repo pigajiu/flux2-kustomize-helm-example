@@ -10,3 +10,4 @@ resources:
   - image-automation.yaml
 images:
 - name: dbsmosue/nginx
+  newTag: test-5 # {"$imagepolicy": "flux-system:platform-frontend-release:tag"}
