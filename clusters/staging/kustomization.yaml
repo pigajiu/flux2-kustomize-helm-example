@@ -6,6 +6,3 @@ resources:
   - infrastructure.yaml
   - image-automation.yaml
   - ../../infrastructure
-images:
-- name: dbsmouse/nginx
-  newTag: test-5 # {"$imagepolicy": "flux-system:platform-frontend-release:tag"}

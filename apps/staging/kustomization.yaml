@@ -8,3 +8,6 @@ patches:
   - path: podinfo-values.yaml
     target:
       kind: HelmRelease
+images:
+- name: dbsmouse/nginx
+  newTag: test-5 # {"$imagepolicy": "flux-system:platform-frontend-release:tag"}
