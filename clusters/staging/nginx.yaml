@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: nginx
+    version: 1.27.1
   name: nginx-deployment
   namespace: staging
 spec:
