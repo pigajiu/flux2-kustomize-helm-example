@@ -7,4 +7,4 @@ spec:
   image: index.docker.io/dbsmouse/nginx
   interval: 1m0s
   secretRef:
-    name: regcred
+    name: dk-registry

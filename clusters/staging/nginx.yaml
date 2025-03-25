@@ -16,7 +16,7 @@ spec:
         app: nginx
     spec:
       imagePullSecrets:
-        - name: regcred
+        - name: dk-registry
       containers:
       - image: index.docker.io/dbsmouse/nginx
         ports:
