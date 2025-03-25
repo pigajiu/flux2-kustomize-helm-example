@@ -4,3 +4,5 @@ namespace: flux-system
 resources:
   - image-repos.yaml
   - ci-policies.yaml
+  - ../image-secret
+  
