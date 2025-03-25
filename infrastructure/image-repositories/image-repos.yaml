@@ -4,7 +4,7 @@ metadata:
   name: dbsmouse-nginx
   namespace: flux-system
 spec:
-  image: index.docker.io/dbsmouse/nginx
+  image: dbsmouse/nginx
   interval: 1m0s
   secretRef:
     name: dk-registry

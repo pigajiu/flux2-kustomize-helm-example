@@ -9,5 +9,5 @@ resources:
   - nginx.yaml
   - image-automation.yaml
 images:
-- name: index.docker.io/dbsmouse/nginx
+- name:dbsmouse/nginx
   newTag: test-5 # {"$imagepolicy": "flux-system:platform-frontend-release:tag"}

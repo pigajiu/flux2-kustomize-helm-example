@@ -18,7 +18,7 @@ spec:
       imagePullSecrets:
         - name: dk-registry
       containers:
-      - image: index.docker.io/dbsmouse/nginx
+      - image: dbsmouse/nginx
         ports:
         - containerPort: 80
         name: nginx
