@@ -11,3 +11,10 @@ patches:
 images:
   - name: dbsmouse/nginx
     newTag: test-7 # {"$imagepolicy": "flux-system:dbsmouse-nginx-development:tag"}
+configMapGenerator:
+- name: common-configs
+  behavior: merge
+  envs:
+  - config.properties
+  options:
+    disableNameSuffixHash: true

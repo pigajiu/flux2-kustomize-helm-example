@@ -6,3 +6,9 @@ resources:
   - repository.yaml
   - release.yaml
   - ../../../infrastructure/image-secret
+configMapGenerator:
+- name: common-configs
+  envs:
+    - config.properties
+  options:
+    disableNameSuffixHash: true
