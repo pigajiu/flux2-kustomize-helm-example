@@ -13,7 +13,7 @@ spec:
         email: ci@dbsmouse.com
         name: dbsmouse CI
       messageTemplate: "{{range .Updated.Images}}{{println .}}{{end}}"
-  interval: 1m0s
+  interval: 2m0s
   sourceRef:
     kind: GitRepository
     name: flux-system
