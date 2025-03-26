@@ -13,6 +13,8 @@ spec:
         email: ci@dbsmouse.com
         name: dbsmouse CI
       messageTemplate: "{{range .Updated.Images}}{{println .}}{{end}}"
+    push:
+      branch: staging
   interval: 2m0s
   sourceRef:
     kind: GitRepository
