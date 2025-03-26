@@ -10,4 +10,4 @@ patches:
       kind: HelmRelease
 images:
   - name: dbsmouse/nginx
-    newTag: test-6 # {"$imagepolicy": "flux-system:dbsmouse-nginx-development:tag"}
+    newTag: test-7 # {"$imagepolicy": "flux-system:dbsmouse-nginx-development:tag"}
