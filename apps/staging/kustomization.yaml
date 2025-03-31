@@ -4,6 +4,8 @@ namespace: staging
 resources:
   - ../base/podinfo
   - nginx.yaml
+  - nginx-service.yaml
+  - nginx-ingress.yaml
 patches:
   - path: podinfo-values.yaml
     target:
