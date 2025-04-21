@@ -4,6 +4,7 @@ resources:
   - gotk-components.yaml
   - gotk-sync.yaml
   - treafik.yaml
+  - traefik-dashboard-auth.yaml
 labels:
   - pairs:
       toolkit.fluxcd.io/tenant: sre-team
