@@ -11,19 +11,6 @@ spec:
         kind: HelmRepository
         name: traefik
   interval: 6h0m0s
-  values:
-    ports:
-      web:
-        expose: true
-        exposedPort: 80
-      websecure:
-        expose: true
-        exposedPort: 443
-      traefik:
-        port: 9000
-        expose: true
-        exposedPort: 8080
-        protocol: HTTP
   ingressRoute:
     dashboard:
       enabled: true
