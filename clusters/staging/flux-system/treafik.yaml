@@ -24,6 +24,6 @@ spec:
         expose: true
         exposedPort: 8080
         protocol: HTTP
-    api:
-      dashboard: true
-      insecure: true
+  ingressRoute:
+    dashboard:
+      enabled: true
