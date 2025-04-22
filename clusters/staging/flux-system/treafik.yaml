@@ -1,7 +1,7 @@
-apiVersion: helm.toolkit.fluxcd.io/v2
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
-  name: my-traefik
+  name: traefik
   namespace: traefik
 spec:
   chart:
@@ -10,7 +10,9 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: traefik
-  interval: 3h0m0s
+      version: "16.2.0"
+  interval: 6h0m0s
+  targetNamespace: traefik
   install:
     crds: Create
   upgrade:
