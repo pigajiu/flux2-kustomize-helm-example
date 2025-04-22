@@ -15,3 +15,27 @@ spec:
     crds: Create
   upgrade:
     crds: CreateReplace
+  values:
+    deployment:
+      kind: DaemonSet
+    providers:
+      kubernetesCRD:
+        allowExternalNameServices: true
+    experimental:
+      kubernetesGateway:
+        enabled: true
+    metrics:
+      prometheus:
+        addEntryPointsLabels: true
+        addRoutersLabels: true
+        addServicesLabels: true
+        entryPoint: metrics
+    service:
+      externalTrafficPolicy: Local
+      annotations:
+        helm.sh/resource-policy: keep
+    ports:
+      metrics:
+        expose: true
+      web:
+        redirectTo: websecure
