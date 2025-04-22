@@ -6,8 +6,8 @@ metadata:
   namespace: traefik
 
 spec:
-  entryPoints:
-    - websecure
+  #entryPoints:
+    #- websecure
 
   routes:
     - match: PathPrefix(`/dashboard`) || PathPrefix(`/api`)
