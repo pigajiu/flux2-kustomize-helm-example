@@ -33,11 +33,20 @@ spec:
         addServicesLabels: true
         entryPoint: metrics
     service:
+      enabled: true
+      type: NodePort
       externalTrafficPolicy: Local
       annotations:
         helm.sh/resource-policy: keep
     ports:
-      metrics:
-        expose: true
       web:
-        redirectTo: websecure
+        port: 80
+        nodePort: 30080
+      websecure:
+        port: 443
+        nodePort: 30443
+    #ports:
+      #metrics:
+        #expose: true
+      #web:
+        #redirectTo: websecure
